@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey: how to solve a drug problem</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <h1 id="title">How to solve the drugs problem?</h1>
+        <p>Survey form</p>
+        <p id="description">This survey helps us to solve the problem of drags</p>
+    </header>
+    <form id="survey-form">
+        <header id="description">
+            <h2>Please help us to solve the problem of drugs</h2>
+        </header>
+        <div id="personal">
+            <div class="question">
+                <label for="name" id="name-label">Name: </label>
+            </div>
+            <div class="answer">
+                <input type="text" id="name" placeholder="enter your name" required>
+            </div>
+
+            <div class="question">
+                <label for="email" id="email-label">email adres: </label>
+            </div>
+            <div class="answer">
+                <input type="email" id="email" placeholder="enter email adress" required>
+            </div>
+
+            <div class="question">
+                <label for="number" id="number-label">Select your age:
+                </label>
+            </div>
+            <div class="answer">
+                <input type="number" id="number" min="13" max="122" placeholder="enter your age" required>
+            </div>
+            <div class="question">
+                <label for="dropdown" class="inputlabel">Select your profile: </label>
+            </div>
+            <div class="answer">
+                <select name="nazwa" id="dropdown">
+                    <option value="select" disabled>Choose your option</option>
+                    <option value="student">Student</option>
+                    <option value="employee">Full time job</option>
+                    <option value="freelancer">Freelancer</option>
+                    <option value="partime">Employee - not full time</option>
+                    <option value="preferno">Prefer not to say</option>
+                    <option value="housewife">Stay at home</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div id="whitepaper">
+                <h3>Contact with drugs</h3>
+                <div class="questionwhy">At what age people first take drugs ?</div>
+                <div class="answer" id="firstcontact">
+                    <div><label class="choosefirst"><input type="radio" value="1" name="firstcontact" checked> Before 15
+                            - in first school</label></div>
+                    <div><label class="choosefirst"><input type="radio" value="2" name="firstcontact"> Before
+                            18</label></div>
+                    <div><label class="choosefirst"><input type="radio" value="3" name="firstcontact"> Before
+                            matriculation</label></div>
+                    <div><label class="choosefirst"><input type="radio" class="selectfirst" value="4"
+                                name="firstcontact"> Before 21 - during first studies</label></div>
+                    <div><label class="choosefirst"><input type="radio" class="selectfirst" value="5"
+                                name="firstcontact"> Before finishing studies</label></div>
+                    <div><label class="choosefirst"><input type="radio" class="selectfirst" value="6"
+                                name="firstcontact"> After founding first job</label></div>
+                    <div><label class="choosefirst"><input type="radio" value="7" name="firstcontact"> After getting
+                            married</label>
+                    </div>
+                    <div><label class="choosefirst"><input type="radio" value="8" name="firstcontact"> When they alredy
+                            have children</label></div>
+                </div>
+                <div class="questionwhy">
+                    <p>Why people take drugs first time ?</p>
+                    <p id="remark1">Multiple answer possible</p>
+                </div>
+                <div class="answer" id="whycontact">
+                    <div><label class="choosefirst"><input type="checkbox" name="questionwhy" value="1"> They are
+                            sad</label></div>
+                    <div><label class="choosefirst"><input type="checkbox" name="questionwhy" value="2"> They have
+                            fun</label></div>
+                    <div><label class="choosefirst"><input type="checkbox" name="questionwhy" value="3"> They do not
+                            know the side effects</label></div>
+                    <div><label class="choosefirst"><input type="checkbox" name="questionwhy" value="4"> They are
+                            afraid</label></div>
+                    <div><label class="choosefirst"><input type="checkbox" name="questionwhy" value="5"> They are
+                            forced</label></div>
+                    <div><label class="choosefirst"><input type="checkbox" name="questionwhy" value="6"> They are bored
+                        </label></div>
+                    <input type="text" class="input-field" placeholder="Please comment this question">
+                </div>
+
+                <div class="questionwhy">
+                    <p id="remark2">Please use the field to write your comment about drugs</p>
+                </div>
+                <div class="answer" id="openfield">
+                    <textarea id="comments" class="input-field" name="comment"
+                        placeholder="Please enter your comment here"></textarea>
+                </div>
+    </form>
+    <button id="submit" type="submit">Submit survey</button>
+    </section>
+</body>
+
+</html>
